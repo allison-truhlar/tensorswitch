@@ -42,7 +42,7 @@ if hasattr(sys.stderr, 'reconfigure'):
 
 os.umask(0o0002)  # Team permissions: rwxrwxr-x
 
-__version__ = "2.0.0-beta"
+from tensorswitch_v2 import __version__
 
 from .utils.pyramid_utils import resolve_downsample_method
 from .utils import get_dtype_name
