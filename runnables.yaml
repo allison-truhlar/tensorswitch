@@ -31,6 +31,14 @@ runnables:
           - zarr3
           - zarr2
           - n5
+      - flag: --chunk_size
+        name: Chunk Size
+        type: string
+        description: Inner chunk shape (e.g., "32,256,256"). Auto-optimized by default.
+      - flag: --no_sharding
+        name: Disable Sharding
+        type: boolean
+        description: Disable sharding for Zarr3 output. Sharding is enabled by default.
     resources:
       cpus: 4
       memory: "60 GB"
